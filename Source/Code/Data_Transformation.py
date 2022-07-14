@@ -380,8 +380,3 @@ df_final.to_excel(escrito, index=False)
 # guardar el excel
 escrito.save()
 print('DONE')
-
-# %% [markdown]
-# 
-
-
