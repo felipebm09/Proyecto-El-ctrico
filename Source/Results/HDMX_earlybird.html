@@ -14510,6 +14510,7 @@ a.anchor-link {
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done!&quot;</span><span class="p">)</span>
     
 <span class="n">total_analized</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s1">&#39;Socketing&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">df_final</span>
 </pre></div>
 
      </div>
@@ -14532,7 +14533,7 @@ a.anchor-link {
 <pre>Running preprocessing...
 Analyzing document:  c:\Users\felip\Documents\Universidad\1s2022\Proyecto_Electrico\Source\Raw_Data\Hands_on_tool.xlsx
 Buscando unidades sólidas!
-Se van a ignorar:  22134  líneas que son unidades sólidas.
+Se van a ignorar:  237901  líneas que son unidades sólidas.
 Analizing tool  HXV101 ...
 Done!
 Analizing tool  HXV103 ...
@@ -14541,6 +14542,328 @@ Analizing tool  HXV105 ...
 Done!
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Socketing</th>
+      <th>TIU</th>
+      <th>Tool</th>
+      <th>Cell</th>
+      <th>Test_Time</th>
+      <th>Bines_General</th>
+      <th>Bines_NLot</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>...</th>
+      <th>90</th>
+      <th>91</th>
+      <th>92</th>
+      <th>93</th>
+      <th>94</th>
+      <th>95</th>
+      <th>96</th>
+      <th>97</th>
+      <th>98</th>
+      <th>99</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2316.0</td>
+      <td>P3763</td>
+      <td>HXV101</td>
+      <td>A101</td>
+      <td>153.280</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>96.0</td>
+      <td>13824</td>
+      <td>HXV101</td>
+      <td>A102</td>
+      <td>179.509</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2824.0</td>
+      <td>P3674</td>
+      <td>HXV101</td>
+      <td>A201</td>
+      <td>154.545</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7.0</td>
+      <td>P3844</td>
+      <td>HXV101</td>
+      <td>A202</td>
+      <td>114.963</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>251.0</td>
+      <td>P4066</td>
+      <td>HXV101</td>
+      <td>A301</td>
+      <td>181.268</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>1576.0</td>
+      <td>P3963</td>
+      <td>HXV105</td>
+      <td>C302</td>
+      <td>173.487</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>2271.0</td>
+      <td>P3666</td>
+      <td>HXV105</td>
+      <td>C401</td>
+      <td>169.502</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>2544.0</td>
+      <td>P3979</td>
+      <td>HXV105</td>
+      <td>C402</td>
+      <td>169.745</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>4232.0</td>
+      <td>P3838</td>
+      <td>HXV105</td>
+      <td>C501</td>
+      <td>172.885</td>
+      <td>4232.0</td>
+      <td>17.134</td>
+      <td>3926.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>48.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>2465.0</td>
+      <td>P3654</td>
+      <td>HXV105</td>
+      <td>C502</td>
+      <td>170.887</td>
+      <td>0.0</td>
+      <td>0.000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>90 rows × 106 columns</p>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -14642,15 +14965,15 @@ Done!
   <tbody>
     <tr>
       <th>0</th>
-      <td>354.0</td>
-      <td>175.228</td>
-      <td>15.0</td>
-      <td>15.000</td>
+      <td>2316.0</td>
+      <td>153.280</td>
+      <td>0.0</td>
+      <td>0.000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
@@ -14658,7 +14981,7 @@ Done!
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -14666,39 +14989,39 @@ Done!
     </tr>
     <tr>
       <th>1</th>
-      <td>415.0</td>
-      <td>173.246</td>
-      <td>38.0</td>
-      <td>19.000</td>
-      <td>1.0</td>
+      <td>96.0</td>
+      <td>179.509</td>
+      <td>0.0</td>
+      <td>0.000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>2.0</td>
-      <td>2.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>413.0</td>
-      <td>174.020</td>
-      <td>63.0</td>
-      <td>15.750</td>
-      <td>3.0</td>
+      <td>2824.0</td>
+      <td>154.545</td>
+      <td>0.0</td>
+      <td>0.000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>3.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
@@ -14706,16 +15029,16 @@ Done!
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>3.0</td>
-      <td>1.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>5.0</td>
-      <td>13.385</td>
+      <td>7.0</td>
+      <td>114.963</td>
       <td>0.0</td>
       <td>0.000</td>
       <td>0.0</td>
@@ -14738,15 +15061,15 @@ Done!
     </tr>
     <tr>
       <th>4</th>
-      <td>415.0</td>
-      <td>172.164</td>
-      <td>40.0</td>
-      <td>20.000</td>
-      <td>1.0</td>
+      <td>251.0</td>
+      <td>181.268</td>
+      <td>0.0</td>
+      <td>0.000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
@@ -14754,9 +15077,9 @@ Done!
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
-      <td>2.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -14786,23 +15109,23 @@ Done!
     </tr>
     <tr>
       <th>85</th>
-      <td>366.0</td>
-      <td>147.994</td>
-      <td>366.0</td>
-      <td>24.400</td>
+      <td>1576.0</td>
+      <td>173.487</td>
       <td>0.0</td>
-      <td>2.0</td>
+      <td>0.000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>8.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>5.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -14810,10 +15133,10 @@ Done!
     </tr>
     <tr>
       <th>86</th>
-      <td>37.0</td>
-      <td>119.944</td>
-      <td>37.0</td>
-      <td>6.167</td>
+      <td>2271.0</td>
+      <td>169.502</td>
+      <td>0.0</td>
+      <td>0.000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -14827,15 +15150,15 @@ Done!
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>87</th>
-      <td>1.0</td>
-      <td>0.000</td>
+      <td>2544.0</td>
+      <td>169.745</td>
       <td>0.0</td>
       <td>0.000</td>
       <td>0.0</td>
@@ -14858,50 +15181,50 @@ Done!
     </tr>
     <tr>
       <th>88</th>
-      <td>367.0</td>
-      <td>150.578</td>
-      <td>367.0</td>
-      <td>24.467</td>
-      <td>0.0</td>
+      <td>4232.0</td>
+      <td>172.885</td>
+      <td>4232.0</td>
+      <td>17.134</td>
+      <td>13.0</td>
+      <td>9.0</td>
+      <td>3.0</td>
       <td>2.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
+      <td>23.0</td>
+      <td>6.0</td>
       <td>...</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>2.0</td>
       <td>1.0</td>
       <td>0.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>1.0</td>
+      <td>48.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
       <td>2.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>89</th>
-      <td>340.0</td>
-      <td>151.128</td>
-      <td>340.0</td>
-      <td>22.667</td>
+      <td>2465.0</td>
+      <td>170.887</td>
       <td>0.0</td>
-      <td>2.0</td>
+      <td>0.000</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>2.0</td>
       <td>0.0</td>
-      <td>2.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.0</td>
     </tr>
   </tbody>
@@ -14990,121 +15313,121 @@ Done!
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.718941</td>
-      <td>0.931014</td>
-      <td>0.030488</td>
-      <td>0.258621</td>
+      <td>0.469479</td>
+      <td>0.697752</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.04</td>
       <td>0.000000</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.083333</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.000000</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0.843177</td>
-      <td>0.920483</td>
-      <td>0.077236</td>
-      <td>0.327586</td>
-      <td>0.142857</td>
+      <td>0.019266</td>
+      <td>0.817150</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0000</td>
+      <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.08</td>
-      <td>0.105263</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.083333</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.0</td>
-      <td>0.083333</td>
+      <td>0.00</td>
+      <td>0.000000</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0.839104</td>
-      <td>0.924596</td>
-      <td>0.128049</td>
-      <td>0.271552</td>
-      <td>0.428571</td>
+      <td>0.572501</td>
+      <td>0.703510</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.12</td>
       <td>0.000000</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.250000</td>
-      <td>0.083333</td>
-      <td>0.0</td>
-      <td>0.083333</td>
+      <td>0.00</td>
+      <td>0.000000</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.008147</td>
-      <td>0.071117</td>
+      <td>0.001217</td>
+      <td>0.523327</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
+      <td>0.0000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.00</td>
       <td>0.000000</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.000000</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0.843177</td>
-      <td>0.914734</td>
-      <td>0.081301</td>
-      <td>0.344828</td>
-      <td>0.142857</td>
+      <td>0.050700</td>
+      <td>0.825157</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.04</td>
       <td>0.000000</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.083333</td>
       <td>0.000000</td>
-      <td>1.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.00</td>
       <td>0.000000</td>
       <td>0.0</td>
     </tr>
@@ -15134,122 +15457,122 @@ Done!
     </tr>
     <tr>
       <th>85</th>
-      <td>0.743381</td>
-      <td>0.786315</td>
-      <td>0.743902</td>
-      <td>0.420690</td>
+      <td>0.319408</td>
+      <td>0.789737</td>
       <td>0.000000</td>
-      <td>0.285714</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.32</td>
-      <td>0.052632</td>
+      <td>0.000000</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.416667</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.000000</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>86</th>
-      <td>0.073320</td>
-      <td>0.637281</td>
-      <td>0.075203</td>
-      <td>0.106328</td>
+      <td>0.460353</td>
+      <td>0.771596</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.00</td>
       <td>0.000000</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
       <td>0.000000</td>
-      <td>0.083333</td>
+      <td>0.000000</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.000000</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>87</th>
+      <td>0.515717</td>
+      <td>0.772703</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <td>0.0000</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.00</td>
       <td>0.000000</td>
+      <td>0.0</td>
       <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>0.00</td>
       <td>0.0</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.0</td>
+      <td>0.00</td>
       <td>0.000000</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>88</th>
-      <td>0.745418</td>
-      <td>0.800045</td>
-      <td>0.745935</td>
-      <td>0.421845</td>
-      <td>0.000000</td>
-      <td>0.285714</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.04</td>
-      <td>0.052632</td>
+      <td>0.858041</td>
+      <td>0.786996</td>
+      <td>0.951011</td>
+      <td>0.277222</td>
+      <td>0.619048</td>
+      <td>0.5625</td>
+      <td>0.5</td>
+      <td>0.2</td>
+      <td>0.159722</td>
+      <td>0.5</td>
       <td>...</td>
+      <td>0.5</td>
       <td>0.0</td>
+      <td>0.25</td>
+      <td>1.0</td>
+      <td>0.333333</td>
+      <td>0.571429</td>
       <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.166667</td>
-      <td>0.083333</td>
-      <td>0.0</td>
-      <td>0.166667</td>
+      <td>0.75</td>
+      <td>0.071429</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>89</th>
-      <td>0.690428</td>
-      <td>0.802967</td>
-      <td>0.691057</td>
-      <td>0.390810</td>
+      <td>0.499696</td>
+      <td>0.777901</td>
       <td>0.000000</td>
-      <td>0.285714</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>...</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>0.00</td>
-      <td>0.052632</td>
-      <td>...</td>
       <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.166667</td>
       <td>0.000000</td>
-      <td>1.0</td>
-      <td>0.083333</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.000000</td>
       <td>0.0</td>
     </tr>
   </tbody>
@@ -15310,17 +15633,17 @@ Done!
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>GAUSSIAN:
-[1 0 0 1 0 0 1 1 1 1 1 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0
- 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 0 1 1 0 0 0 1 1 0 0 1 1 1 0 0 1
- 0 1 0 0 1 0 0 0 1 0 1 0 0 1 0 0]
+[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 1 1 1 1 1 1 0 1 1 0 1 1 0 0 1
+ 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 0 1 1 1 0 1]
 MULTINOMIAL:
-[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
- 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1
- 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1]
+[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 0 0 1 1 1 0 1]
 BERNUILLI
-[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1
- 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1
- 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
+[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 0 0 1 1 1 0 1]
 </pre>
 </div>
 </div>
@@ -15346,11 +15669,11 @@ BERNUILLI
 <span class="c1">#############################</span>
 
 <span class="c1"># Para rearmar los indices en la visualización</span>
-<span class="n">indexing1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">21</span><span class="p">]</span>
-<span class="n">indexing2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">23</span><span class="p">]</span>
-<span class="n">indexing3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">25</span><span class="p">]</span>
-<span class="n">indexing4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">27</span><span class="p">]</span>
-<span class="n">indexing5</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">29</span><span class="p">]</span>
+<span class="n">indexing1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">21</span><span class="p">]</span>   <span class="c1"># A101, A102, B101, B102, C101, C102</span>
+<span class="n">indexing2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">23</span><span class="p">]</span>   <span class="c1"># A201, A202, B201, B202, C201, C202</span>
+<span class="n">indexing3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">25</span><span class="p">]</span>   <span class="c1"># A301, A302, B301, B302, C301, C302</span>
+<span class="n">indexing4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">27</span><span class="p">]</span>   <span class="c1"># A401, A402, B401, B402, C401, C402</span>
+<span class="n">indexing5</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">29</span><span class="p">]</span>   <span class="c1"># A501, A502, B501, B502, C501, C502</span>
 <span class="n">t101</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">t103</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">t105</span> <span class="o">=</span> <span class="p">[]</span>
@@ -15365,13 +15688,13 @@ BERNUILLI
 <span class="n">Matriz_103</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
 <span class="n">Matriz_105</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing1</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing5</span><span class="p">:</span>
     <span class="n">Matriz_101</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t101</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_103</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t103</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_105</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t105</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing2</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing4</span><span class="p">:</span>
     <span class="n">Matriz_101</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t101</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_103</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t103</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_105</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t105</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -15383,13 +15706,13 @@ BERNUILLI
     <span class="n">Matriz_105</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t105</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing4</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing2</span><span class="p">:</span>
     <span class="n">Matriz_101</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t101</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_103</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t103</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_105</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t105</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span>
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing5</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexing1</span><span class="p">:</span>
     <span class="n">Matriz_101</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t101</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_103</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t103</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">Matriz_105</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="n">counter</span><span class="p">]</span><span class="o">=</span><span class="n">t105</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -15417,9 +15740,9 @@ BERNUILLI
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>HXV101:  [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
-HXV103:  [[1, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1]]
-HXV105:  [[1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+<pre>HXV101:  [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 0]]
+HXV103:  [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+HXV105:  [[1, 1, 1, 1, 0, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 1], [0, 1, 1, 1, 1, 0], [0, 0, 1, 1, 1, 1]]
 </pre>
 </div>
 </div>
@@ -15439,17 +15762,50 @@ HXV105:  [[1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 0, 
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">matriz</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Matriz_101</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">matriz</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span> <span class="n">fignum</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HXV101&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C102&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C202&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">15</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Tester Interface Unit Marginality</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">matriz_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Matriz_101</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">matriz_1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span><span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fignum</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HXV101&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C502&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C402&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C302&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C402&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C502&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C202&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C102&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="n">x</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_xticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="n">y</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">)</span>
+
+<span class="n">matriz_3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Matriz_103</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">132</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">matriz_3</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fignum</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HXV103&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C502&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C402&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C302&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C202&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C102&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="n">x</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_xticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="n">y</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">133</span><span class="p">)</span>
+<span class="n">matriz_5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Matriz_105</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">matriz_5</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fignum</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HXV105&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C502&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C402&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C302&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C202&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C102&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="n">x</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_xticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="n">y</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -15473,135 +15829,7 @@ HXV105:  [[1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 0, 
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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"
->
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">matriz</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Matriz_103</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">matriz</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span> <span class="n">fignum</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HXV103&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C102&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C202&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C302&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C402&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C502&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="n">x</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_xticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="n">y</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre>&lt;Figure size 432x1440 with 0 Axes&gt;</pre>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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"
->
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">matriz</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Matriz_105</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">matriz</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greys&#39;</span><span class="p">,</span> <span class="n">fignum</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;HXV105&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;A102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;B102&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C101&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;C102&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B202&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C201&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;C202&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B302&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C301&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;C302&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;A402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;B402&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C401&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;C402&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;A502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;B502&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">3.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C501&#39;</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">4.8</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C502&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="n">x</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_xticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="n">y</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()][</span><span class="mi">1</span><span class="p">:],</span> <span class="n">minor</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre>&lt;Figure size 432x1440 with 0 Axes&gt;</pre>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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"
+<img src="data:image/png;base64,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AmEAAAAAgJYQCAMAAAAAtIRAGAAAAACgJQTCAAAAAAAtIRAGAAAAAGgJgTAAAAAAQEsIhAEAAAAAWkIgDAAAAADQEgJhAAAAAICWEAgDAAAAALSEQBgAAAAAoCUEwgAAAAAALSEQBgAAAABoCYEwAAAAAEBLCIQBAAAAAFpCIAwAAAAA0BICYQAAAACAlhAIAwAAAAC0hEAYAIA522yzzbL//vtnv/32ywEHHJAvf/nLSZKLL744T3nKU7JmzZrsu++++chHPnLvNt///vdz4IEHZs8998wRRxyRO++8M0ly/vnn54ADDsiqVaty5plnLsrfA7CcnX322Sml5PLLL0/iXAzARAJhAADm7IEPfGAuvvjifPOb38xb3vKWnHTSSUmSLbfcMu9///vzrW99K5/+9Kfzmte8JjfffHOS5MQTT8xrX/vaXHnlldluu+1y2mmnJUke8YhH5PTTT8+LX/zixfpzAJa19evX52lPe1rWr1+fxLkYgIkEwgAAjNQtt9yS7bbbLkmy11575dGPfnSSZJdddsmOO+6Yn/zkJ6m15txzz83hhx+eJDn66KNz9tlnJ0l222237Lvvvrnf/XxUBZit2267LV/84hdz2mmn5cMf/nAS52IAJlq12AUAAGD5+9WvfpX9998/t99+e66//vqce+65fY+58MILc+edd2aPPfbIjTfemG233TarVjUfR1evXp3rrrtuoYsNsOJ84hOfyMEHH5y99tor22+/fTZs2JC1a9fee79zMQB+6gMAYM42DRlx+eWX59Of/nRe+tKXptZ67/3XX399jjrqqLzvfe/T2wxgHq1fvz5HHnlkkuTII4+8d9iIxLkYgIYewgAAjNRTnvKU/PSnP81PfvKT7LjjjrnlllvyvOc9L29+85vz5Cc/OUmy/fbb5+abb85dd92VVatWZePGjdl1110XueQAy9tNN92Uc889N5deemlKKbn77rtTSsnb3/723Hrrrc7FACTRQxgAgBG7/PLLc/fdd2f77bfPnXfemcMOOywvfelL7x2jMklKKTnooIPunbn+jDPOyAte8ILFKjLAinDmmWfmqKOOyjXXXJOrr7461157bXbfffdccMEFzsUA3EsgDADAnG0aQ3j//ffPEUcckTPOOCObbbZZPvrRj+b888/P6aeffu/9F198cZLkbW97W0455ZTsueeeufHGG/Pyl788SfK1r30tq1evzsc+9rEcd9xxWbNmzSL+ZQDLx/r163PYYYdNWPfCF74wRx99tHMxAPcyZAQAAHN29913D1z/kpe8JC95yUsG3veoRz0qF154Yd/6Jz3pSdm4ceNIywfQBuedd17fuuOPPz7HH3/8pNs4FwO0jx7CAAAAAAAtIRAGAAAAAGgJgTAAAAAAQEsIhAEAAAAAWkIgDAAAAADQEgJhAAAAAICWEAgDAAAAALSEQBgAAAAAoCUEwgAAAAAALSEQBgAAAABoCYEwAAAAAEBLCIQBAAAAAFpCIAwAAAAA0BICYQAAAACAlhAIAwAAAAC0hEAYAAAAAKAlBMIAAAAAAC0hEAYAAAAAaAmBMAAAAABASwiEAQAAAABaQiAMAAAAANASAmEAAAAAgJYQCAMAAAAAtIRAGAAAAACgJQTCAAAAAAAtIRAGAAAAAGgJgTAAAAAAQEsIhAEAAAAAWkIgDAAAAADQEgJhAAAAAICWEAgDAAAAALSEQBgAAAAAoCUEwgCLaO3atam1WrrL2rVrF/spgVbYsGFDSimW7gIAAG1Saq3TP6iUQ5McutNOO73yhBNOmP9SLROrV6/Oxo0bF7sYS4b66KdOJlIf/fbee+9stdVWi12MJWPdunW56KKLpDND0l4P5tzTT51MpD76qZOJ1MdE69atS61Vez2kTe31zjvv/MoPfehDi12cJWPDhg3eaz3URz91MpH6mEh99Fu3bt2GWusT++6YTc+t1atX1ySW7nLyyScvehmW0qI+1In6mP1y3nnnVe6zdu3aWpdAT+XlvmivJy7OPepEfagT9TH6ZbHbupWw7LXXXpX7eK/1L+pDnagP9TGC5aI6oA0yZAQAAAAAQEsIhAEAAAAAWkIgDAAAAADQEgJhAAAAAICWEAgDAAAAALSEQBgAAAAAoCUEwgAAAAAALSEQBgAAAABoCYEwAAAAAEBLCIQBAAAAAFpCIAwAAAAA0BICYQAAAACAlhAIAwAAAAC0hEAYAAAAAKAlBMIAAAAAAC0hEAYAAAAAaAmBMAAAAABASwiEAQAAAABaQiAMAAAAANASAmEAAAAAgJYQCAMAAAAAtIRAGAAAAACgJQTCAAAAAAAtIRAGAAAAAGgJgTDACvSjH/0oRx55ZPbYY4+sXbs2z33uc3PFFVfk4IMPzrbbbpvnP//5Ex7//e9/PwceeGD23HPPHHHEEbnzzjuTJKecckoe97jHZd99982znvWsXHPNNYvx5wAAMAtnn312Sim5/PLL710328+B559/fg444ICsWrUqZ5555oKWH4D5JRAGWGFqrTnssMPS6XRy1VVXZcOGDXnLW96SG264ISeccEI+8IEP9G1z4okn5rWvfW2uvPLKbLfddjnttNOSJE94whNy0UUX5ZJLLsnhhx+e17/+9Qv95wAAMEvr16/P0572tKxfv/7edbP9HPiIRzwip59+el784hcvWLkBWBgCYYAV5rzzzsvmm2+eV73qVfeu22+//fL0pz89z3rWs7L11ltPeHytNeeee24OP/zwJMnRRx+ds88+O0ly0EEHZcstt0ySPPnJT87GjRsX5o8AAGAot912W774xS/mtNNOy4c//OF718/2c+Buu+2WfffdN/e7n9gAYKVxZgdYYS677LKsXbt2xo+/8cYbs+2222bVqlVJktWrV+e6667re9xpp52WQw45ZGTlBABg9D7xiU/k4IMPzl577ZXtt98+GzZsmPSxM/0cCMDKIhAGYFof/OAHc9FFF+WEE05Y7KIAADCF9evX58gjj0ySHHnkkROGjQCAJFm12AUAYLTWrFkzq4k/tt9++9x888256667smrVqmzcuDG77rrrvfefc845efOb35wvfOEL2WKLLeajyAAAjMBNN92Uc889N5deemlKKbn77rtTSsnb3/72lFL6Hj/d50AAViY9hAFWmGc+85m54447cuqpp9677pJLLskFF1ww8PGllBx00EH3hshnnHFGXvCCFyRJvvGNb+S4447Lv/3bv2XHHXec/8IDADC0M888M0cddVSuueaaXH311bn22muz++67D/U5EICVSyAMsMKUUnLWWWflnHPOyR577JE1a9bkpJNOysMe9rA8/elPz4te9KJ8/vOfz+rVq/OZz3wmSfK2t70tp5xySvbcc8/ceOONefnLX56kmY36tttuy4te9KLsv//++e3f/u3F/NMAAJjC+vXrc9hhh01Y98IXvjDr16+f9efAr33ta1m9enU+9rGP5bjjjsuaNWsW/O8BYH4YMgJgBdpll13y0Y9+tG/9ZL1DHvWoR+XCCy/sW3/OOeeMvGwAAMyP8847r2/d8ccfP+U2k30OfNKTnpSNGzeOrGwALB16CAMAAAAAtIRAGAAAAACgJQTCAAAAAAAtIRAGAAAAAGgJgTAAAAAAQEsIhAEAAAAAWkIgDAAAAADQEgJhAAAAAICWEAgDAAAAALSEQBgAAAAAoCUEwgAAAAAALSEQBgAAAABoCYEwAAAAAEBLCIQBAAAAAFpCIAwAAAAA0BICYQAAAACAlhAIAwAAAAC0hEAYAAAAAKAlBMIAAAAAAC0hEAYAAAAAaAmBMAAAAABASwiEAQAAAABaQiAMAAAAANASAmEAAAAAgJYQCAMAAAAAtIRAGAAAAACgJQTCAAAAAAAtIRAGAAAAAGgJgTAAAAAAQEsIhAEAAAAAWkIgDAAAAADQEgJhAAAAAICWEAgDAAAAALREqbVO/6BSDk1yaJLfT/Kd+S7UMvLgJD9f7EIsIeqjnzqZSH30UycTPbrW+uDFLsRypb2elPdZP3Uykfrop04mUh8Taa/nQHs9Je+1idRHP3UykfqYSH30G9hmr5rJlrXWf0/y76WU1Fr/YORFW6ZKKaeqj/uoj37qZCL10U+dTFRKOXWxy7Ccaa8H8z7rp04mUh/91MlE6mMi7fXcaK8n5702kfrop04mUh8TqY9+k7XZsx0y4t9HUJaVRH1MpD76qZOJ1Ec/dTKR+hgN9TiR+uinTiZSH/3UyUTqYyL1MRrqsZ86mUh99FMnE6mPidRHv4F1MqMhIwAAAAAAWP5MKgcAAAAA0BICYQAAAACAlhAIAwAAAAC0hEAYAAAAAKAlBMIAAAAAAC0hEAYAAAAAaAmBMAAAAABAS/z/zRTOLShfiKAAAAAASUVORK5CYII="
 >
 </div>
 
